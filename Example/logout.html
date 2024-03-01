@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/asset/style.css">
+    <script src="http://localhost:8080/js/keycloak.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/asset/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+<style>
+    .info {
+      color: white; /* Đặt màu chữ của phần tử "info" là trắng */
+    }
+  
+    /* (Tùy chọn) Đặt màu chữ của các phần tử h2 bên trong "info" là trắng */
+    .info h2 {
+      color: white;
+    }
+</style> 
+<body>
+
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>Truong Dat</h1>
+            <h3>Demo keycloak with js application</h3>
+            <button class="scroll" onclick="scrollToAbout()">
+                <i>in4</i>
+            </button>
+            <!-- <a href="#about" class="scroll"></a> -->
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="header">
+            <h1>Thông tin user</h1>
+            <a href="http://localhost:7070">Đăng Nhập</a>
+        </div>
+
+        <div id="table-attr" class="card">
+            <img src="asset/meo.gif">
+            <div class="info">
+                Username<h2 id="row-username"></h2><br>                
+                Firstname<h2 id="row-firstName"></h2><br>
+                Lastname<h2 id="row-lastName"></h2><br>
+                FullName<h2 id="row-name"></h2><br>               
+                Email<h2 id="row-email"></h2> 
+            </div>
+            <input type="hidden" id="ta-token"></input>
+            <input type="hidden" id="ta-refreshToken"></input>
+        </div>
+    </section>    
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i>⇧</i>
+    </button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
